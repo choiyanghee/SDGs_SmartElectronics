@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDGs 번영 | 스마트전자과 기술 포트폴리오</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Orbitron:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="navigateTo('hero')">
+                <i class="fas fa-microchip"></i>
+                <span>SDGs <strong>PROSPERITY</strong></span>
+            </div>
+            <button class="nav-toggle" id="navToggle" onclick="toggleNav()">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="navigateTo('hero')" class="active" data-section="hero"><i class="fas fa-home"></i> 홈</a></li>
+                <li><a href="#" onclick="navigateTo('portfolio')" data-section="portfolio"><i class="fas fa-briefcase"></i> 기술 포트폴리오</a></li>
+                <li><a href="#" onclick="navigateTo('jobs')" data-section="jobs"><i class="fas fa-building"></i> 채용공고</a></li>
+                <li><a href="#" onclick="navigateTo('certs')" data-section="certs"><i class="fas fa-certificate"></i> 자격증</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== SECTION 1: HERO ===== -->
+    <section class="page active" id="page-hero">
+        <!-- Animated Background -->
+        <div class="hero-bg">
+            <div class="circuit-lines"></div>
+            <div class="particle-field" id="particleField"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-globe-americas"></i>
+                UN SDGs Goal 8·9·11 — PROSPERITY
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line1">스마트전자과</span>
+                <span class="title-line2">기술로 여는 <em>번영</em>의 미래</span>
+            </h1>
+            <p class="hero-description">
+                지속가능한 발전목표(SDGs)의 <strong>번영(Prosperity)</strong>은<br>
+                모든 인류가 풍요롭고 충만한 삶을 누리며,<br>
+                경제·사회·기술의 진보가 자연과 조화를 이루는 세상을 꿈꿉니다.<br><br>
+                <span class="highlight-text">우리 스마트전자과 학생들은 회로 위에 꿈을 설계하고,<br>
+                센서로 세상을 감지하며, 코드로 미래를 프로그래밍합니다.</span>
+            </p>
+
+            <div class="sdgs-prosperity-cards">
+                <div class="sdg-card sdg8">
+                    <div class="sdg-number">8</div>
+                    <div class="sdg-info">
+                        <h3>양질의 일자리와 경제성장</h3>
+                        <p>전자기술 역량으로 산업현장의 핵심인재가 됩니다</p>
+                    </div>
+                </div>
+                <div class="sdg-card sdg9">
+                    <div class="sdg-number">9</div>
+                    <div class="sdg-info">
+                        <h3>산업, 혁신과 인프라</h3>
+                        <p>IoT와 스마트기술로 산업 인프라를 혁신합니다</p>
+                    </div>
+                </div>
+                <div class="sdg-card sdg11">
+                    <div class="sdg-number">11</div>
+                    <div class="sdg-info">
+                        <h3>지속가능한 도시와 공동체</h3>
+                        <p>스마트시티 기술로 지속가능한 미래를 만듭니다</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-skills-preview">
+                <h2 class="section-subtitle"><i class="fas fa-cogs"></i> 우리가 키우는 핵심 역량</h2>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="fade-up" style="--delay:0">
+                        <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3>회로설계 & PCB제작</h3>
+                        <p>산업의 핵심기술역량</p>
+                        <div class="skill-tag">Core Tech</div>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" style="--delay:1">
+                        <div class="skill-icon"><i class="fas fa-wifi"></i></div>
+                        <h3>IoT & 센서기술</h3>
+                        <p>스마트인프라 혁신 역량</p>
+                        <div class="skill-tag">Smart Infra</div>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" style="--delay:2">
+                        <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                        <h3>마이크로컨트롤러</h3>
+                        <p>산업 자동화 역량</p>
+                        <div class="skill-tag">Automation</div>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" style="--delay:3">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                        <h3>전자제품 조립·유지보수</h3>
+                        <p>지속가능한 산업 역량</p>
+                        <div class="skill-tag">Sustainable</div>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" style="--delay:4">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>프로그래밍 (C, Python)</h3>
+                        <p>기술혁신 역량</p>
+                        <div class="skill-tag">Innovation</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-quote">
+                <i class="fas fa-quote-left"></i>
+                <p>"기술은 인류의 번영을 위한 가장 강력한 도구이다.<br>
+                우리는 그 도구를 손에 쥐고, 더 나은 세상을 만들어간다."</p>
+                <span class="quote-source">— 스마트전자과의 비전</span>
+            </div>
+
+            <button class="hero-cta" onclick="navigateTo('portfolio')">
+                <i class="fas fa-rocket"></i> 나의 기술 포트폴리오 시작하기
+            </button>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 2: PORTFOLIO ===== -->
+    <section class="page" id="page-portfolio">
+        <div class="section-container">
+            <!-- Login Area -->
+            <div id="portfolioLogin" class="portfolio-login">
+                <div class="login-card">
+                    <div class="login-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h2>내 기술 포트폴리오</h2>
+                    <p>이름을 입력하고 나만의 기술 포트폴리오를 관리하세요</p>
+                    <div class="login-form">
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="studentNameInput" placeholder="이름을 입력하세요" maxlength="20" onkeydown="if(event.key==='Enter') loginStudent()">
+                        </div>
+                        <button class="btn-primary" onclick="loginStudent()">
+                            <i class="fas fa-sign-in-alt"></i> 입장하기
+                        </button>
+                    </div>
+                    <div class="registered-students" id="registeredStudents">
+                        <h3><i class="fas fa-users"></i> 등록된 학생 목록</h3>
+                        <div class="student-list" id="studentList"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Dashboard -->
+            <div id="portfolioDashboard" class="portfolio-dashboard" style="display:none;">
+                <div class="dashboard-header">
+                    <div class="user-info">
+                        <div class="user-avatar" id="userAvatar">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div>
+                            <h2 id="dashboardUserName">학생이름</h2>
+                            <p class="user-subtitle">스마트전자과 기술 포트폴리오</p>
+                        </div>
+                    </div>
+                    <button class="btn-outline" onclick="logoutStudent()">
+                        <i class="fas fa-sign-out-alt"></i> 로그아웃
+                    </button>
+                </div>
+
+                <!-- Skill Category Tabs -->
+                <div class="skill-categories">
+                    <button class="cat-tab active" data-category="all" onclick="filterPortfolio('all', this)">
+                        <i class="fas fa-th-large"></i> 전체
+                    </button>
+                    <button class="cat-tab" data-category="회로설계" onclick="filterPortfolio('회로설계', this)">
+                        <i class="fas fa-project-diagram"></i> 회로설계
+                    </button>
+                    <button class="cat-tab" data-category="PCB제작" onclick="filterPortfolio('PCB제작', this)">
+                        <i class="fas fa-layer-group"></i> PCB제작
+                    </button>
+                    <button class="cat-tab" data-category="IoT" onclick="filterPortfolio('IoT', this)">
+                        <i class="fas fa-wifi"></i> IoT
+                    </button>
+                    <button class="cat-tab" data-category="센서기술" onclick="filterPortfolio('센서기술', this)">
+                        <i class="fas fa-satellite-dish"></i> 센서기술
+                    </button>
+                    <button class="cat-tab" data-category="마이크로컨트롤러" onclick="filterPortfolio('마이크로컨트롤러', this)">
+                        <i class="fas fa-microchip"></i> 아두이노
+                    </button>
+                    <button class="cat-tab" data-category="전자제품조립" onclick="filterPortfolio('전자제품조립', this)">
+                        <i class="fas fa-tools"></i> 조립·유지보수
+                    </button>
+                    <button class="cat-tab" data-category="프로그래밍" onclick="filterPortfolio('프로그래밍', this)">
+                        <i class="fas fa-code"></i> 프로그래밍
+                    </button>
+                </div>
+
+                <!-- Add New Portfolio Button -->
+                <button class="btn-add-portfolio" onclick="openPortfolioModal()">
+                    <i class="fas fa-plus-circle"></i> 새 프로젝트 추가하기
+                </button>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" id="portfolioGrid">
+                    <!-- Populated by JS -->
+                </div>
+                <div class="empty-state" id="emptyPortfolio" style="display:none;">
+                    <i class="fas fa-folder-open"></i>
+                    <h3>아직 등록된 프로젝트가 없습니다</h3>
+                    <p>위 버튼을 눌러 첫 프로젝트를 추가해보세요!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Modal -->
+        <div class="modal-overlay" id="portfolioModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalTitle"><i class="fas fa-plus-circle"></i> 새 프로젝트 등록</h2>
+                    <button class="modal-close" onclick="closePortfolioModal()"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="editPortfolioId">
+                    <div class="form-group">
+                        <label><i class="fas fa-tag"></i> 역량 카테고리</label>
+                        <select id="portfolioCategory">
+                            <option value="">카테고리 선택</option>
+                            <option value="회로설계">🔌 회로설계</option>
+                            <option value="PCB제작">📋 PCB제작</option>
+                            <option value="IoT">📡 IoT</option>
+                            <option value="센서기술">📶 센서기술</option>
+                            <option value="마이크로컨트롤러">🔬 마이크로컨트롤러(아두이노)</option>
+                            <option value="전자제품조립">🔧 전자제품 조립·유지보수</option>
+                            <option value="프로그래밍">💻 프로그래밍 (C, Python 등)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-heading"></i> 프로젝트 제목</label>
+                        <input type="text" id="portfolioTitle" placeholder="예: 아두이노 스마트 온도 센서 프로젝트">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-camera"></i> 프로젝트 사진</label>
+                        <div class="image-upload-area" id="imageUploadArea" onclick="document.getElementById('imageInput').click()">
+                            <input type="file" id="imageInput" accept="image/*" onchange="previewImage(event)" style="display:none">
+                            <div class="upload-placeholder" id="uploadPlaceholder">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>클릭하여 사진 업로드</p>
+                                <span>JPG, PNG, GIF (최대 5MB)</span>
+                            </div>
+                            <img id="imagePreview" class="image-preview" style="display:none">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-align-left"></i> 프로젝트 진행과정</label>
+                        <textarea id="portfolioDescription" rows="8" placeholder="프로젝트의 목적, 진행과정, 사용 부품, 배운 점 등을 자세히 작성하세요..."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-outline" onclick="closePortfolioModal()">취소</button>
+                    <button class="btn-primary" onclick="savePortfolio()">
+                        <i class="fas fa-save"></i> 저장하기
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 3: JOBS ===== -->
+    <section class="page" id="page-jobs">
+        <div class="section-container">
+            <div class="page-header">
+                <div class="page-header-icon"><i class="fas fa-building"></i></div>
+                <h1>실제 채용공고 링크</h1>
+                <p>고졸 채용의 문은 활짝 열려있습니다. SDGs 8번 — 양질의 일자리와 경제성장을 실현하세요!</p>
+            </div>
+
+            <div class="jobs-grid">
+                <a href="https://www.jobkorea.co.kr/Search/?stext=%EA%B3%A0%EC%A1%B8%EC%B1%84%EC%9A%A9&tabType=recruit&Page=1" target="_blank" class="job-card jobkorea">
+                    <div class="job-card-bg"></div>
+                    <div class="job-card-content">
+                        <div class="job-logo">
+                            <i class="fas fa-search-dollar"></i>
+                        </div>
+                        <h2>잡코리아</h2>
+                        <h3>고졸채용 검색결과</h3>
+                        <p>국내 대표 취업 플랫폼에서<br>고졸 채용 공고를 확인하세요</p>
+                        <div class="job-link-arrow">
+                            <span>바로가기</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.saramin.co.kr/zf_user/search?searchType=search&searchword=%EA%B3%A0%EC%A1%B8%EC%B1%84%EC%9A%A9&panel_type=&search_optional_item=n&search_done=y&panel_count=y&preview=y" target="_blank" class="job-card saramin">
+                    <div class="job-card-bg"></div>
+                    <div class="job-card-content">
+                        <div class="job-logo">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h2>사람인</h2>
+                        <h3>고졸채용 검색결과</h3>
+                        <p>다양한 기업의 고졸 우대<br>채용 정보를 탐색하세요</p>
+                        <div class="job-link-arrow">
+                            <span>바로가기</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.work24.go.kr/wk/a/b/1200/retriveDtlEmpSrchList.do" target="_blank" class="job-card work24">
+                    <div class="job-card-bg"></div>
+                    <div class="job-card-content">
+                        <div class="job-logo">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h2>고용24</h2>
+                        <h3>고졸채용 정보</h3>
+                        <p>정부 공식 고용정보 플랫폼에서<br>신뢰할 수 있는 채용 정보를 확인하세요</p>
+                        <div class="job-link-arrow">
+                            <span>바로가기</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.ncs.go.kr/ncs/page.do?sk=P1A1B4" target="_blank" class="job-card ncs">
+                    <div class="job-card-bg"></div>
+                    <div class="job-card-content">
+                        <div class="job-logo">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h2>NCS 국가직무능력표준</h2>
+                        <h3>고졸채용 직무분석</h3>
+                        <p>직무별 필요 역량과 능력단위를<br>분석하여 취업을 준비하세요</p>
+                        <div class="job-link-arrow">
+                            <span>바로가기</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="jobs-tips">
+                <h2><i class="fas fa-lightbulb"></i> 취업 준비 TIP</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-number">01</div>
+                        <h3>포트폴리오 준비</h3>
+                        <p>수업에서 진행한 프로젝트를 정리하여 나만의 기술 포트폴리오를 만드세요</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-number">02</div>
+                        <h3>자격증 취득</h3>
+                        <p>전자캐드기능사, 전자기능사 등 관련 자격증을 취득하여 경쟁력을 높이세요</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-number">03</div>
+                        <h3>현장실습 참여</h3>
+                        <p>현장실습을 통해 실무 경험을 쌓고, 기업과의 네트워크를 형성하세요</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-number">04</div>
+                        <h3>꾸준한 자기계발</h3>
+                        <p>새로운 기술 트렌드를 학습하고, 지속적으로 역량을 성장시키세요</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 4: CERTIFICATES ===== -->
+    <section class="page" id="page-certs">
+        <div class="section-container">
+            <div class="page-header">
+                <div class="page-header-icon"><i class="fas fa-certificate"></i></div>
+                <h1>자격증 취득 체크하기</h1>
+                <p>스마트전자과 필수·권장 자격증을 관리하고 취득 현황을 기록하세요!</p>
+            </div>
+
+            <!-- Cert Login -->
+            <div id="certLogin" class="cert-login">
+                <div class="login-card compact">
+                    <div class="login-icon small">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h2>자격증 관리를 위해 이름을 입력하세요</h2>
+                    <div class="login-form">
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="certNameInput" placeholder="이름을 입력하세요" maxlength="20" onkeydown="if(event.key==='Enter') loginCert()">
+                        </div>
+                        <button class="btn-primary" onclick="loginCert()">
+                            <i class="fas fa-sign-in-alt"></i> 확인
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cert Dashboard -->
+            <div id="certDashboard" class="cert-dashboard" style="display:none;">
+                <div class="cert-header">
+                    <div class="cert-user-info">
+                        <h2><i class="fas fa-user-graduate"></i> <span id="certUserName"></span>님의 자격증 현황</h2>
+                    </div>
+                    <div class="cert-stats">
+                        <div class="stat-box">
+                            <span class="stat-number" id="certObtained">0</span>
+                            <span class="stat-label">취득 완료</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number" id="certRemaining">7</span>
+                            <span class="stat-label">도전 중</span>
+                        </div>
+                        <div class="stat-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="certProgress" style="width:0%"></div>
+                            </div>
+                            <span id="certPercentage">0%</span>
+                        </div>
+                    </div>
+                    <button class="btn-outline" onclick="logoutCert()">
+                        <i class="fas fa-sign-out-alt"></i> 로그아웃
+                    </button>
+                </div>
+
+                <div class="cert-grid" id="certGrid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">저장되었습니다!</span>
+    </div>
+
+    <!-- Portfolio Detail Modal -->
+    <div class="modal-overlay" id="detailModal">
+        <div class="modal-content detail-modal">
+            <div class="modal-header">
+                <h2 id="detailTitle"></h2>
+                <button class="modal-close" onclick="closeDetailModal()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body" id="detailBody">
+            </div>
+            <div class="modal-footer" id="detailFooter">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
