@@ -1701,12 +1701,3 @@ body {
         font-size: 0.78rem;
     }
 }
-/* ===== 강조 텍스트 가독성 개선 ===== */
-.hero-subtitle strong,
-.hero-subtitle b,
-.highlight,
-.accent,
-.prosperity {
-    color: #22d3ee !important;   /* 밝은 청록 */
-    font-weight: 700;
-}
