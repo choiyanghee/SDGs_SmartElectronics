@@ -14,7 +14,7 @@
  * 1) 아래 API_URL을 본인 Apps Script Web App URL로 바꾸세요.
  * 2) Apps Script의 ADMIN_PASSWORD를 본인 비밀번호로 설정하세요.
  */
-const API_URL = "https://script.google.com/u/0/home/projects/1YmgC246f3rK-WTVcJwgylngCzj0qjlt3yihh72xyHyq6gN5Pl3Nt-gJF/edit";
+const API_URL = "https://script.google.com/macros/s/AKfycbz2odmv7YAWPbL6yYm0olHT-s1U_YK8ROb8jinqFhm6fx0uAl2ZqfkrNBCJgfrucES64g/exec";
 
 // ===== State Management =====
 let currentUser = null;
