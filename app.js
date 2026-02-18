@@ -4,6 +4,7 @@
    =================================== */
 
 // ===== State Management =====
+const API_URL = "https://script.google.com/macros/s/AKfycbyxHhtC_luibQuIIDmg6UrjCgYuET5wUd-D0I0hxyzoVWVWlOXZ_KYazEIJbPdMayY0sg/exec";
 let currentUser = null;
 let currentCertUser = null;
 let currentFilter = 'all';
